@@ -1,6 +1,7 @@
 {
     "name": "mako/app",
-    "description": "Mako Framework",
+    "version": "11.4.0",
+    "description": "Mako Application Skeleton",
     "keywords": [
         "mako",
         "framework"
@@ -23,14 +24,26 @@
         }
     },
     "require": {
-        "php": ">=8.2.0",
-        "mako/framework": "11.0.*"
+        "php": ">=8.4.0",
+        "mako/framework": "11.4.*",
+        "makopro/blade": "*",
+        "makopro/helpers": "*"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/mako-pro/blade"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/mako-pro/helpers"
+        }
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
         "branch-alias": {
-             "dev-master": "11.0-dev"
+             "dev-master": "11.4-dev"
         }
     },
     "suggest": {
